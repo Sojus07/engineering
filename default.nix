@@ -22,7 +22,6 @@ in
     binwalk
     binutils
     ghidra-bin
-    ghidra-extensions
     binaryninja-free
     mtkclient
   ];
