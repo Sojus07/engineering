@@ -3,7 +3,7 @@ let
   mtkclient = import ./mtkclient.nix { inherit pkgs; };
 in
 {
-  import = [ ./android.nix ];
+  imports = [ ./android.nix ];
   
   environment.systemPackages = with pkgs; [ 
     minicom
