@@ -1,4 +1,4 @@
-{ pkgs }:
+{ config, pkgs, ... }:
 let
   mtkclient = import ./mtkclient.nix { inherit pkgs; };
 in
