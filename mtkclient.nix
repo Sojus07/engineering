@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 pkgs.python3Packages.buildPythonApplication rec {
     pname = "mtkclient";
     version = "git-3093e6";
