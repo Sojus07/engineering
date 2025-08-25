@@ -14,7 +14,6 @@ in
     net-tools    
     usbutils
     usbmuxd
-    pwndbg
     pwntools
     hexyl
     hextazy
