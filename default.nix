@@ -10,6 +10,8 @@ in
       enable = true;
       extraRules = ''
         SUBSYSTEM=="usb", ATTR{idVendor}=="0e8d", MODE="0666", GROUP="plugdev"
+        SUBSYSTEM=="usb", ATTR{idVendor}=="0e8d", MODE="0666", GROUP="dialout"
+
       '';
     };
   };
