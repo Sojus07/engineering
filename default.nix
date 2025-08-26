@@ -3,19 +3,8 @@ let
   mtkclient = import ./mtkclient.nix { inherit pkgs; };
 in
 {
-  imports = [ ./android.nix ];
+  imports = [ ./android.nix ./udev.nix ./android.nix ];
   
-  services = {
-    udev = {
-      enable = true;
-      extraRules = ''
-        SUBSYSTEM=="usb", ATTR{idVendor}=="0e8d", MODE="0666", GROUP="plugdev"
-        SUBSYSTEM=="usb", ATTR{idVendor}=="0e8d", MODE="0666", GROUP="dialout"
-
-      '';
-    };
-  };
-
   environment.systemPackages = with pkgs; [ 
     minicom
     ethtool
